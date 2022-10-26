@@ -36,7 +36,7 @@ function updateGMEasy(){
                                 loadertxt.innerHTML = "Finished!"
                                 setTimeout(function(){
                                     tlt.remove();
-                                    window.location = "../game_copy.html";
+                                    window.location = "game_copy.html";
                                 },3000)
                             },5000)
                         },1000)
