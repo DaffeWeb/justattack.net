@@ -76,7 +76,7 @@ function gameOverTime(){
     document.getElementById("gameOver").style.display = "flex";
     document.getElementById("gameContainer").style.filter = "blur(10px)";
     document.getElementById("gameContainer").style.pointerEvents = "none";
-    audioMusic1.src = "../gameFiles/audiofiles/gameoverdrop.wav";
+    audioMusic1.src = "gameFiles/audiofiles/gameoverdrop.wav";
     audioMusic1.loop = false;
     audioMusic1.play();
     audioMusicBGM.pause();
@@ -137,7 +137,7 @@ document.querySelector(`.${randomCountry.classList[0]}`).removeAttribute('onclic
 // Country Selector
 
 function gameStartEz(){
-    audioMusicBGM.src = "../gameFiles/audiofiles/cancion-triste-1502.mp3"
+    audioMusicBGM.src = "gameFiles/audiofiles/cancion-triste-1502.mp3"
     audioMusicBGM.loop = true;
     audioMusicBGM.volume = 0.5;
     audioMusicBGM.play();
@@ -214,11 +214,11 @@ let intervalSet = 1000;
 
 function invadeCountry(country){
     if(countriesInvasion != 1){
-    audioMusic1.src = "../gameFiles/audiofiles/invasionstart.wav";
+    audioMusic1.src = "gameFiles/audiofiles/invasionstart.wav";
     audioMusic1.loop = false;
     audioMusic1.volume = 0.6;
     audioMusic1.play();
-    audioSFX.src = "../gameFiles/audiofiles/warsfx.mp3"
+    audioSFX.src = "gameFiles/audiofiles/warsfx.mp3"
     audioSFX.loop = true;
     audioSFX.volume = 0.4;
     audioSFX.play();
@@ -257,7 +257,7 @@ function invadeCountry(country){
             invasionSelectionGroup.style.opacity = "0";
             invasionSelectionGroup.style.display = "none";
             invasionSelectionGroup.style.pointerEvents = "none";
-            audioMusic1.src = "../gameFiles/audiofiles/invasioncomplete.wav";
+            audioMusic1.src = "gameFiles/audiofiles/invasioncomplete.wav";
             audioMusic1.loop = false;
             audioMusic1.volume = 0.6;
             audioMusic1.play()
@@ -376,7 +376,7 @@ function strikeAccept(){
         militaryAmmunition = 0
     }
 
-    audioMusic2.src = "../gameFiles/audiofiles/callairstrikesfx.mp3"
+    audioMusic2.src = "gameFiles/audiofiles/callairstrikesfx.mp3"
     audioMusic2.loop = false;
     audioMusic2.volume = 0.2;
     audioMusic2.play();
@@ -384,7 +384,7 @@ function strikeAccept(){
     deselectInvasion()
 
     setTimeout(function(){
-        audioMusic2.src = "../gameFiles/audiofiles/airstrikesfx2.mp3"
+        audioMusic2.src = "gameFiles/audiofiles/airstrikesfx2.mp3"
         audioMusic2.loop = false;
         audioMusic2.volume = 0.5;
         audioMusic2.play();
